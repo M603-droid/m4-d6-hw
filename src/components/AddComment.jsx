@@ -20,7 +20,7 @@ const AddComment = ({asin}) => {
     },[asin])
   
 
-   const addCommentHere = async (e) => {
+   const sendComment = async (e) => {
         e.preventDefault()
         try {
             let response = await fetch('https://striveschool-api.herokuapp.com/api/comments', {
@@ -50,7 +50,7 @@ const AddComment = ({asin}) => {
  
         return (
             <div>
-                <Form onSubmit={addCommentHere}>
+                <Form onSubmit={sendComment}>
                     <Form.Group>
                         <Form.Label>Comment text</Form.Label>
                         <Form.Control
