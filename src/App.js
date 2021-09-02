@@ -6,6 +6,7 @@ import MyBadge from './components/MyBadge'
 import SingleBook from './components/SingleBook'
 import BookList from './components/BookList'
 import fantasyBooks from './fantasyBooks.json'
+import Registration from './components/Registration'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         {/* <SingleBook book={fantasyBooks[0]} /> */}
         <BookList books={fantasyBooks} />
       </header>
+      <Registration/>
     </div>
   )
 }
